@@ -1,0 +1,42 @@
+.nav {
+    margin: 60px 10px;
+    width: 200px;
+    position: fixed;
+    overflow-x: hidden;
+}
+
+.nav ul {
+    margin-top: 15px;
+}
+
+.nav li a{
+    border-radius: 8px;
+    padding: 15px 8px 10px 10px;
+    text-decoration: none;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2D4251;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+
+.nav li a:hover {
+    width: 200px;
+    height: 45px;
+    color: #FFFFFF;
+    background: #006fba;
+}
+
+.nav a.active {
+    width: 200px;
+    height: 45px;
+    color: #FFFFFF;
+    background: #006fba;
+}
+.nav_user_img {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
+}

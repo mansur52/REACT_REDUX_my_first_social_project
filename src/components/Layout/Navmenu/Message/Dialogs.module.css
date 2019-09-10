@@ -1,0 +1,8 @@
+.dialogs{
+    display: flex;
+    justify-content: space-evenly;
+}
+.dialogs a,
+.message{
+    font-size: 30px;
+}

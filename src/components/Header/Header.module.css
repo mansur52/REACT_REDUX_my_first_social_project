@@ -1,0 +1,89 @@
+
+/*header navbar*/
+
+
+header {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+    background-color: #006fba;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+header li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header a,button{
+    color: #edf0f1;
+}
+
+.logo {
+    cursor: pointer;
+    width: 50px;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #ffa500;
+}
+
+.header__input input {
+    padding-right: 100px;
+}
+
+.header__input {
+    display: flex;
+    font-size: 17px;
+    border: none;
+}
+
+.header__input button {
+    float: right;
+    padding: 6px 10px;
+    right: 20px;
+    position: relative;
+    margin-right: 16px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.header__input button:hover {
+    background: #ffa500;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: #d08600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #ffa500;
+}
+
+/*end header*/
+
+

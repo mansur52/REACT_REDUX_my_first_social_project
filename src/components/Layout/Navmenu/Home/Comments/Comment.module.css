@@ -1,0 +1,45 @@
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 30px 0;
+}
+
+.darker__img {
+    float: right;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container__img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.time__right {
+    float: right;
+    color: #aaa;
+}
+
+.time__left {
+    float: left;
+    color: #999;
+}

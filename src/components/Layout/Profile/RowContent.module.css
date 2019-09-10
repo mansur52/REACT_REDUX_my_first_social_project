@@ -1,0 +1,20 @@
+/* Column container */
+
+.row {
+    margin: 0 auto;
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+.rowContainer{
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+    flex: 70% 1;
+    background-color: white;
+    padding: 20px;
+    top: 60px;
+    position: relative;
+    flex-flow: column;
+    margin-left: 226px;
+}
