@@ -6,3 +6,6 @@
 .message{
     font-size: 30px;
 }
+.dialog .active{
+    color:gold;
+}
