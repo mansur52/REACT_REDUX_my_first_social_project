@@ -4,7 +4,7 @@ import Navmenu from "../Navmenu/Navmenu";
 
 import Myposts from "../Navmenu/Home/My posts/Myposts";
 import Content from "../Navmenu/Posts/Content";
-import Dialogs from "../Navmenu/Message/Dialogs";
+import Dialogs from "../Navmenu/Messages/Dialogs";
 import {BrowserRouter, Route} from "react-router-dom";
 import News from "../../Header/News Feed/News";
 import Settings from "../../Header/Settings/Settings";
@@ -16,22 +16,23 @@ import Community from "../Navmenu/Community/Community";
 console.log(s);
 
 const  RowContent = (props) => {
+
     return (
         <BrowserRouter>
         <div className={s.row}>
            <Navmenu />
            <div className={s.rowContainer}>
-               <Route path='/home' component={Myposts}/>
-               <Route path='/news feed' component={News}/>
-               <Route path='/settings' component={Settings}/>
+               <Route path='/home' render={ () => <Myposts posts={props.posts}/> }/>
+               <Route path='/news feed' render={ () => <News /> }/>
+               <Route path='/settings' render={ () => <Settings /> }/>
 
-               <Route path='/dialogs' component={Dialogs}/>
-               <Route path='/posts' component={Content}/>
-               <Route path='/about' component={About}/>
-               <Route path='/photos' component={Photos}/>
-               <Route path='/reviews' component={Reviews}/>
-               <Route path='/events' component={Events}/>
-               <Route path='/community' component={Community}/>
+               <Route path='/dialogs' render={ () => <Dialogs dialogs={props.dialogs} messages={props.messages} /> }/>
+               <Route path='/posts' render={ () => <Content /> }/>
+               <Route path='/about' render={ () => <About /> }/>
+               <Route path='/photos' render={ () => <Photos /> }/>
+               <Route path='/reviews' render={ () => <Reviews /> }/>
+               <Route path='/events' render={ () => <Events/> }/>
+               <Route path='/community' render={ () => <Community /> }/>
            </div>
         </div>
         </BrowserRouter>

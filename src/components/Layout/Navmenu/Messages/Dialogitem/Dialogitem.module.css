@@ -1,0 +1,10 @@
+.dialogs{
+    display: flex;
+    justify-content: space-evenly;
+}
+.dialogs a,{
+    font-size: 30px;
+}
+.dialog .active{
+    color:gold;
+}
