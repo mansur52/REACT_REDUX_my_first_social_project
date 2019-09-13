@@ -6,20 +6,15 @@ import {BrowserRouter} from "react-router-dom";
 
 const App = (props) => {
 
-    return (
-        < BrowserRouter >
-        < div
-    className = 'app-wrapper' >
-        < Header / >
-        < RowContent
-    posts = {props.state.posts}
-    dialogs = {props.state.dialogs}
-    messages = {props.state.messages}
-    />
-    < /div>
-    < /BrowserRouter>
-)
-    ;
+
+  return (
+      <BrowserRouter>
+    <div className='app-wrapper'>
+        <Header />
+        <RowContent posts={props.state.posts} dialogs={props.state.dialogs} messages={props.state.messages}/>
+    </div>
+      </BrowserRouter>
+  );
 }
 
 export default App;
