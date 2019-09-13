@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import state from './redux/state';
 
-aaaaa
+
 
 ReactDOM.render(<App state={state}  />, document.getElementById('root'));
 
