@@ -5,7 +5,7 @@ import RowContent from './components/Layout/Profile/RowContent.jsx';
 import {BrowserRouter} from "react-router-dom";
 
 const App = (props) => {
-    
+
     return (
         < BrowserRouter >
         < div
