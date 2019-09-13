@@ -17,6 +17,7 @@ console.log(s);
 
 const  RowContent = (props) => {
 
+
     return (
         <BrowserRouter>
         <div className={s.row}>
@@ -26,7 +27,7 @@ const  RowContent = (props) => {
                <Route path='/news feed' render={ () => <News /> }/>
                <Route path='/settings' render={ () => <Settings /> }/>
 
-               <Route path='/dialogs' render={ () => <Dialogs dialogs={props.dialogs} messages={props.messages} /> }/>
+               <Route path='/dialogs' render={ () => <Dialogs dialogs={props.dialogs} messages={props.messages}/> }/>
                <Route path='/posts' render={ () => <Content /> }/>
                <Route path='/about' render={ () => <About /> }/>
                <Route path='/photos' render={ () => <Photos /> }/>
