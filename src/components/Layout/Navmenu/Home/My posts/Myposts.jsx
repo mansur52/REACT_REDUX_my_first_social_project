@@ -6,7 +6,6 @@ console.log(s);
 
 const  Myposts = (props) => {
 
-
     let postsElements =
         props.posts.map( p => <Post message={p.message} likesCount={p.likesCount} />);
 
