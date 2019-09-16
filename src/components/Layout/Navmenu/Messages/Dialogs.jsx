@@ -4,6 +4,7 @@ import Message from "./Message/Message";
 import DialogItem from "./Dialogitem/Dialogitem";
 
 
+
 const Dialogs = (props) => {
 
 
@@ -19,6 +20,7 @@ const Dialogs = (props) => {
             <div className={s.messages}>
                 {messagesElements}
             </div>
+
         </div>
     );
 }

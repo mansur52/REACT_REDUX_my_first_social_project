@@ -2,6 +2,7 @@ import React from 'react';
 import s from './Dialogitem.module.css';
 import {NavLink} from "react-router-dom";
 
+
 const DialogItem = (props) => {
     let path = "/dialogs/" + props.id;
 
