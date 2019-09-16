@@ -14,10 +14,13 @@ const MyPosts = (props) => {
     let newPostElement = React.createRef();
 
     let addPost = () => {
+
         let text = newPostElement.current.value;
         props.addPost(text);
         newPostElement.current.value = '';
     };
+
+
 
     return (
         <div>
@@ -25,10 +28,10 @@ const MyPosts = (props) => {
             <h2>My Posts</h2>
             <h5>Title description, Sep 6, 2019</h5>
             <form>
-                <input className={s.posts} type="text" name="search" placeholder="Your News.."/>
+                <input ref={newPostElement} className={s.posts}  type="text"  placeholder="Your News.."/>
             </form>
             <a href="#">
-                <button className={s.publish}>Publish</button>
+                <button className={s.publish} onClick={addPost}>Publish</button>
             </a>
 
 
