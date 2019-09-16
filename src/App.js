@@ -6,7 +6,6 @@ import {BrowserRouter} from "react-router-dom";
 import state, {addPost} from "./redux/state";
 
 const App = (props) => {
-1234
   return (
       <BrowserRouter>
     <div className='app-wrapper'>
