@@ -21,6 +21,10 @@ const MyPosts = (props) => {
     };
 
 
+    let onPostChange = () => {
+        let text=newPostElement.current.value;
+        console.log(text);
+    };
 
     return (
         <div>
@@ -28,7 +32,7 @@ const MyPosts = (props) => {
             <h2>My Posts</h2>
             <h5>Title description, Sep 6, 2019</h5>
             <form>
-                <input ref={newPostElement} className={s.posts}  type="text"  placeholder="Your News.."/>
+                <input onChange={onPostChange} ref={newPostElement} className={s.posts} value={props.newPostText} type="text"  placeholder="Your News.."/>
             </form>
             <a href="#">
                 <button className={s.publish} onClick={addPost}>Publish</button>

@@ -11,7 +11,7 @@ const App = (props) => {
     <div className='app-wrapper'>
         <Header />
         <RowContent posts={props.state.posts} dialogs={props.state.dialogs}
-        messages={props.state.messages} addPost={props.addPost}/>
+        messages={props.state.messages} addPost={props.addPost} newPostText={props.state.newPostText} />
     </div>
       </BrowserRouter>
   );

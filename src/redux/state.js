@@ -6,6 +6,10 @@ let state = {
         {id: 1, message: 'Abraka dabraka:) I am your news', likesCount: 3},
         {id: 2, message: ' My news is Abraka dabraka:)', likesCount: 28}
     ],
+    newPostText:{
+        newPostText:'Social MN.com'
+    },
+
     dialogs: [
         {id: 1, name: 'John'},
         {id: 2, name: 'Mari'},
@@ -32,6 +36,12 @@ export let addPost = (postMessage) => {
         likesCount: 0
     };
     state.posts.push(newPost);
+    rerenderEntireTree(state);
+};
+
+export let updateNewPostText = (newText) => {
+
+    state. newPostText = newText;
     rerenderEntireTree(state);
 };
 

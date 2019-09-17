@@ -24,7 +24,7 @@ const RowContent = (props) => {
             <div className={s.row}>
                 <Navmenu/>
                 <div className={s.rowContainer}>
-                    <Route path='/home' render={() => <MyPosts posts={props.posts} addPost={props.addPost} />}/>
+                    <Route path='/home' render={() => <MyPosts posts={props.posts} addPost={props.addPost} newPostText={props.newPostText} />}/>
                     <Route path='/news feed' render={() => <News/>}/>
                     <Route path='/settings' render={() => <Settings/>}/>
 
